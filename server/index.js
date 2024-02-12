@@ -28,6 +28,6 @@ const PORT = process.env.PORT || 5000
 
 const DATABASE_URL = process.env.CONNECTION_URL
 
-mongoose.connect(DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(DATABASE_URL)
     .then(() => app.listen(PORT, () => {console.log(`server running on port ${PORT}`)}))
     .catch((err) => console.log(err.message))
