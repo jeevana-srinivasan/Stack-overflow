@@ -74,7 +74,7 @@ const QuestionsDetails = () => {
       const [Answer, setAnswer] = useState('')
       const dispatch = useDispatch()
       const User = useSelector((state) => (state.currentUserReducer))
-      const url = 'http://localhost:3000'
+      const url = 'http://localhost:3000/'
 
       const handlePostAns = (e, answerLength) => {
         e.preventDefault()
